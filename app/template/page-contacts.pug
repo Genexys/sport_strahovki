@@ -1,0 +1,60 @@
+.page-contacts
+    .page-contacts__wrapper
+        h2.section-title 
+            | Для связи с разработчиками
+            br
+            | сайта 
+            span.italic SPORTSTRAHOVKI.RU 
+            br
+            | воспользуйтесь формой ниже
+
+        .page-contacts__form
+            form#contacts-form.contacts-form(action="")
+                .form-input
+                    input(type="text")
+                    label.form-input__label Ваше имя
+                .form-input
+                    input(type="mail")
+                    label.form-input__label email
+                .form-input.form-input_textarea
+                    textarea(name="", rows="1").form-input__textarea
+                    label.form-input__label Текстовое сообщение
+                button.main-btn отправить
+
+        .page-contacts__list-contacts
+            h2.section-title 
+                span Контакты страховых компаний:
+            .offers-block   
+                ul.offers-block__list
+                    each val in [1, 2, 3, 4, 5]
+                        li.offers-block__item
+                            .offer-cell 
+                                .offer-img
+                                    img(src="img/image-1.png", alt="")
+                            .offer-cell
+                                .address-block
+                                   .address-block__title  Альфа страхование
+                                   a(href="tel:").address-block__item.address-block__phone +7&nbsp;918&nbsp;444&nbsp;83&nbsp;46
+                                   a(href="mailto:").address-block__item.address-block__mail alfa@mail.ru
+                            .offer-cell 
+                                .address-block
+                                   .address-block__title  Альфа страхование
+                                   p.address-block__item.address-block__address г.&nbsp;Краснодар, ул.&nbsp;Красных&nbsp;Партизан, д.&nbsp;238,
+                                   a(href="tel:").address-block__item.address-block__phone +7&nbsp;(861)&nbsp;345&nbsp;66&nbsp;10
+                            .offer-cell 
+                                a(href="").main-btn.main-btn_yellow перейти на сайт
+
+        .page-contacts__map
+            .map-wrapper
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7343772775cfc7922948c3761d15e8d8eb4c63b1cc602d202d0e434f4a31a2a7&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+        address.page-contacts__address
+            .address-left
+                .address-block
+                    .address-block__title  Альфа страхование
+                    a(href="tel:").address-block__item.address-block__phone +7&nbsp;918&nbsp;444&nbsp;83&nbsp;46
+                    a(href="mailto:").address-block__item.address-block__mail alfa@mail.ru
+            .address-right
+                .address-block
+                    .address-block__title  Альфа страхование
+                    p.address-block__item.address-block__address г.&nbsp;Краснодар, ул.&nbsp;Красных&nbsp;Партизан, д.&nbsp;238,
+                    a(href="tel:").address-block__item.address-block__phone +7&nbsp;(861)&nbsp;345&nbsp;66&nbsp;10

@@ -1,0 +1,39 @@
+.main-section-text {
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    &__wrapper {
+        max-width: 1118px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    &__tags {
+        margin-top: 45px;
+        &-title {
+            margin-bottom: 20px;
+            font-family: Roboto-LightItalic, sans-serif;
+            font-size: rem(24px);
+            text-align: center;
+            color: var(--grayText);
+        }
+    }
+
+    &__line-gradient {
+        top: auto;
+        bottom: 0;
+        height: 10px;
+    }
+
+    .section-title {
+        text-align: center;
+        
+        span {
+            text-transform: uppercase;
+        }
+    }
+
+    .section-descr {
+        text-align: left;
+    }
+}

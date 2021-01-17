@@ -1,0 +1,20 @@
+.steps-block {
+    padding: 65px 15px 180px;
+    
+    .section-title {
+        letter-spacing: .08rem;
+    }
+
+    .section-descr {
+        font-family: Roboto-LightItalic, sans-serif;
+        font-size: rem(24px);
+    }
+
+    &__list{
+        margin-top: 105px;
+
+        @media (max-width: 768px) {
+            margin-top: 70px;
+        }
+    }
+}

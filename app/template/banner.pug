@@ -1,0 +1,64 @@
+.banner-block
+    h1.banner-block__title 
+        | Лучший сервис по выбору 
+        | спортивной страховки 
+        span 24/7
+    p.banner-block__descr 
+        |Быстрое оформление, широкое покрытие. Предложения от 
+        span 6 
+        |страховых компаний
+
+    .banner-block__form-wrapper
+        form.form-insurance.banner-block__form
+            .main-input-field
+                select(name="").custom-select.select-type-sport.main-input
+                    option(value="")
+                    option(value="конный спорт") конный спорт
+                    option(value="хокей") хокей
+                    option(value="плавание") плавание
+                .main-input-field__label Вид спорта
+                .main-input-field__set-value 
+                    ul
+                        li(data-select-value="конный спорт") конный спорт
+                        li(data-select-value="хокей") хокей
+                        li(data-select-value="плавание") плавание
+            .main-input-field
+                select(name="").custom-select.select-period.main-input
+                    option(value="")
+                    option(value="1 год") 1 год
+                    option(value="1 век") 1 век
+                    option(value="1 сек") 1 сек
+                .main-input-field__label Срок страховки
+                .main-input-field__set-value 
+                    ul
+                        li(data-select-value="1 год") 1 год
+                        li(data-select-value="1 век") 1 век
+            .main-input-field
+                select(name="").custom-select.select-age.main-input
+                    option(value="")
+                    option(value="подросток 12-18") подросток 12-18
+                    option(value="взрослый 19-35") взрослый 19-35
+                    option(value="старик 99-150") старик 99-150
+                .main-input-field__label Возраст страхуемого
+                .main-input-field__set-value 
+                    ul
+                        li(data-select-value="подросток 12-18") подросток 12-18
+                        li(data-select-value="взрослый 19-35") взрослый 19-35
+            .main-input-field
+                select(name="").custom-select.select-country.main-input
+                    option(value="")
+                    option(value="сша") сша
+                    option(value="канада") канада
+                    option(value="россия") россия
+                .main-input-field__label Страна
+            .main-input-field.main-input-field_range
+                input(type="text").range-slider-1.range-slider
+                .main-input-field__label Сумма покрытия
+            .main-input-field.main-input-field_btn
+                button.main-btn показать варианты
+    
+    p.banner-block__text
+        | Действующий полис у вас на почте через 
+        span 5 
+        |минут
+    .gradient-line.banner-block__gradient

@@ -1,0 +1,13 @@
+@include font-face(
+	RobotoCondensed-Regular,
+	"../fonts/RobotoCondensed-Regular",
+	normal,
+	normal,
+	woff2
+);
+@include font-face(RobotoCondensed-Light, "../fonts/RobotoCondensed-Light", normal, normal, woff2);
+@include font-face(Roboto-Regular, "../fonts/Roboto-Regular", normal, normal, woff2);
+@include font-face(Roboto-Bold, "../fonts/Roboto-Bold", normal, normal, woff2);
+@include font-face(Georgia, "../fonts/Georgia", normal, normal, woff2);
+@include font-face(Georgia-Italic, "../fonts/Georgia-Italic", normal, normal, woff2);
+@include font-face(Georgia-Bold, "../fonts/Georgia-Bold", normal, normal, woff2);

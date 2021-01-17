@@ -1,0 +1,102 @@
+.main-footer {
+    flex-shrink: 0;
+    position: relative;
+    padding-top: 65px;
+    border-top: 1px dashed #ccc;
+    border-image-source: url(../img/line-bg.svg);
+    border-image-slice: 2;
+    border-image-repeat: repeat;
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding:0 15px 75px;
+
+        @media (max-width: 1023px) {
+            align-items: center;
+        }
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__line-gradient {
+        top: auto;
+        bottom: 0;
+    }
+
+    &__logo {
+        margin: auto;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media (max-width: 1023px) {
+            flex-grow: 0;
+        }
+    }
+
+    &__menu {
+        margin: 0 auto 0 50px;
+        flex-grow: 1;
+
+        @media (max-width: 1023px) {
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 767px) {
+            margin: 50px auto 0;
+        }
+
+        .main-list-menu {
+            justify-content: flex-start;
+
+            @media (max-width: 500px) {
+                flex-direction: column;
+            }
+
+            &__item {
+                margin: 0 25px;
+
+                @media (max-width: 1023px) {
+                    margin: 0;
+                }
+                @media (max-width: 500px) {
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        padding: 20px 15px;
+        text-align: center;
+        
+        a {
+            font-family: "Times New Roman";
+            font-weight: bold;
+            font-style: italic;
+            font-size: rem(15px);
+            text-decoration: underline;
+            color: #6B6C7E;
+        }
+
+        span {
+            font-family: "Arial";
+            font-style: normal;
+        }
+    }
+
+    .dropdown-city {
+        margin-right: 175px;
+
+        @media (max-width: 1023px) {
+            margin-right: auto;
+        }
+    }
+}

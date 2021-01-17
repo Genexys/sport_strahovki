@@ -1,0 +1,51 @@
+doctype html
+html(lang="ru")
+  include ./template/head.pug
+  body
+    include ./template/header.pug
+    include ./template/banner.pug
+    
+    main.main-content
+      //- главная страница
+      include ./template/what-block.pug
+      include ./template/offer-main-block.pug
+      include ./template/steps-block.pug
+      include ./template/main-section-col.pug
+      include ./template/partners.pug
+
+      //- страница со списком предложений
+      //include ./template/page-list-offers.pug
+
+      //- страница о сервисе
+      //include ./template/about-page.pug
+
+      //- страница о страховой компании
+      //include ./template/page-about-company.pug
+
+      //- страница партнерам
+      //include ./template/page-partners.pug
+
+      //- страница контакты
+      //include ./template/page-contacts.pug
+
+      //include ./template/horizontal-form.pug
+    include ./template/footer.pug
+    .modal-overlay#modal-overlay
+    .modal-block#modal-form
+      .modal-inner
+        .modal-block__title Стать партнером
+
+        .modal-block__form-wrapper
+          form#parnters-form.contacts-form.modal-block__form(action="")
+            .form-input
+              input(type="text")
+              label.form-input__label Ваше имя
+            .form-input
+              input(type="mail")
+              label.form-input__label email
+            button.main-btn отправить
+
+  script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+  script(src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js")
+  script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js")
+  script(type="application/javascript", src="js/app.js")

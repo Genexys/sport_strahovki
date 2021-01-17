@@ -1,0 +1,22 @@
+.partners-block {
+    padding-top: 65px;
+    padding-bottom: 85px;
+
+    .section-title {
+        margin-bottom: 110px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 70px;
+        }
+    }
+
+    &__list {
+        margin-bottom: 80px;
+    }
+
+    .main-btn {
+        max-width: 196px;
+        margin: auto;
+    }
+
+}

@@ -1,0 +1,23 @@
+.offer-main-block {
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 45px 15px 55px;
+        background-color: #2E4857;
+        
+        @media (max-width: 1023px) {
+            padding: 25px 15px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #fff;
+            opacity: .5;
+
+            @media (max-width: 1023px) {
+                font-size: rem(24px);
+            }
+        }
+    }
+}

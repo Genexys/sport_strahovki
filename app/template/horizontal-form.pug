@@ -1,0 +1,40 @@
+.form-insurance-wrapper
+    p.section-title.form-title Изменить параметры страховки
+
+    form.form-insurance.form-insurance__horzinontal
+        .main-input-field
+            select(name="").custom-select.select-type-sport.main-input
+                option(value="")
+                option(value="плавание") махач
+                option(value="конный спорт") конный спорт
+                option(value="хокей") хокей
+                option(value="плавание") плавание
+            .main-input-field__label Вид спорта
+            
+        .main-input-field
+            select(name="").custom-select.select-period.main-input
+                option(value="")
+                option(value="1") 1
+                option(value="2") 2
+                option(value="3") 3
+            .main-input-field__label Срок страховки
+        .main-input-field
+            select(name="").custom-select.select-age.main-input
+                option(value="")
+                option(value="подросток 12-18") подросток 12-18
+                option(value="взрослый 19-35") взрослый 19-35
+                option(value="старик 99-150") старик 99-150
+            .main-input-field__label Возраст страхуемого
+            
+        .main-input-field
+            select(name="").custom-select.select-country.main-input
+                option(value="")
+                option(value="сша") сша
+                option(value="канада") канада
+                option(value="россия") россия
+            .main-input-field__label Страна
+        .main-input-field.main-input-field_range
+            input(type="text").range-slider-2.range-slider
+            .main-input-field__label Сумма покрытия
+        .main-input-field.main-input-field_btn
+            button.main-btn.main-btn_form-btn показать предложения

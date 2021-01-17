@@ -1,0 +1,34 @@
+header.main-header
+    .gradient-line.main-header__line-gradient
+    .main-header__wrapper
+        .main-header__logo
+            img(src="img/logo-black.svg", alt="sportstrahovki.ru")
+            .main-header__dropdown.dropdown-city
+                span.dropdown-city__current Краснодар
+                ul.dropdown-city__list
+                    li.dropdown-city__item Москва
+                    li.dropdown-city__item Барнаул
+                    li.dropdown-city__item Караганда
+        
+        .main-header__burger
+            #burger-menu.burger-menu
+                .burger-menu__inner   
+
+        nav.main-header__menu
+            ul.main-list-menu
+                li.main-list-menu__item
+                    a(href="#") Главная
+                li.main-list-menu__item
+                    a(href="#")  о сервисе
+                li.main-list-menu__item
+                    a(href="#") партнёрам
+                li.main-list-menu__item
+                    a(href="#") контакты
+        
+        .main-header__popup-btn
+            button.popup-btn обратная связь
+
+            .header-popup
+                form(action="").header-popup-form
+                    input(type="tel", placeholder="Телефон")
+                    button.main-btn отправить
